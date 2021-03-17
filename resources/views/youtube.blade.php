@@ -50,9 +50,9 @@
         <div class="card-body">
             <div class="row">
 @foreach ($youtubes as $youtube)
-<div class="col-4 my-2 text-center card">
+<div class="col-lg-4 my-2 text-center card">
     <div class="card-body">
-        <iframe style="height: 100%; width:100%" src="https://www.youtube.com/embed/{{$youtube->link}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe style="width:100%;height:100%;" src="https://www.youtube.com/embed/{{$youtube->link}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <h3>
             {{$youtube->title}}
         </h3>
